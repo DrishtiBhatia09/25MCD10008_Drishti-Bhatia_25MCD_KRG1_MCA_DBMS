@@ -45,14 +45,14 @@ WHERE Emp_ID = 101;
 DELETE FROM Department
 WHERE Dept_ID = 3;
 
-CREATE ROLE Manager
-LOGIN PASSWORD 'manager111'
+CREATE ROLE Analyst
+LOGIN PASSWORD 'analyst111'
 
-GRANT SELECT ON Department TO Manager;
-GRANT SELECT ON Employee TO Manager;
-GRANT SELECT ON Project TO Manager;
+GRANT SELECT ON Department TO Analyst;
+GRANT SELECT ON Employee TO Analyst;
+GRANT SELECT ON Project TO Analyst;
 
-REVOKE CREATE ON DATABASE kargil FROM Manager;
+REVOKE CREATE ON DATABASE tpp FROM analyst;
 
 ALTER TABLE Employee
 ADD Phone_No VARCHAR(15);
@@ -61,5 +61,6 @@ ALTER TABLE Employee
 ALTER COLUMN Emp_Name TYPE VARCHAR(100);
 
 DROP TABLE Project;
+
 
 
