@@ -141,7 +141,7 @@ streamlit run app.py
 
 ## 👤 Authors
 
--**Drishti Bhatia**
+- **Drishti Bhatia**
 - **Sameer Shahi** 
 - **Chaitanya Sharma**
 
