@@ -32,9 +32,7 @@ CREATE TABLE Tbl_Supply_logs (
     FOREIGN KEY (prod_id) REFERENCES Tbl_Products(prod_id)
 );
 
--- =========================
 -- INSERT DATA
--- =========================
 
 -- Products
 INSERT INTO Tbl_Products VALUES
@@ -55,9 +53,6 @@ INSERT INTO Tbl_Orders VALUES
 INSERT INTO Tbl_Supply_logs VALUES
 (1, 'UPDATE', 501, 20, 15, '2026-04-20 10:00:00');
 
--- =========================
--- VERIFY
--- =========================
 
 SELECT * FROM Tbl_Products;
 SELECT * FROM Tbl_Suppliers;
